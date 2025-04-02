@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Moderno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #3498db;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #34495e;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .hero-image {
+            flex: 1;
+        }
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav {
+                margin-top: 20px;
+            }
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                Meu Portfólio
+            </div>
+            <nav class="nav">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <h1>Olá, sou um Desenvolvedor Web</h1>
+                <p>
+                    Transformo ideias em experiências digitais incríveis. 
+                    Especializado em desenvolvimento front-end e design responsivo.
+                </p>
+                <a href="#" class="btn">Ver Meus Projetos</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/500x400" alt="Desenvolvedor trabalhando">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
